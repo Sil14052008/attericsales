@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav main main"
+                "footer footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 100px 1fr 50px;
+            gap: 20px; /* Espaçamento entre áreas */
+            height: 100vh; /* Ocupa toda a altura da tela */
+        }
+        header {
+            grid-area: header;
+            background: #f4f4f4;
+            padding: 10px;
+        }
+        nav {
+            grid-area: nav;
+            background: #ddd;
+            padding: 10px;
+        }
+        main {
+            grid-area: main;
+            background: #fff;
+            padding: 10px;
+        }
+        footer {
+            grid-area: footer;
+            background: #f4f4f4;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Cabeçalho
+        </header>
+        <nav>
+            Navegação
+        </nav>
+        <main>
+            Conteúdo Principal
+        </main>
+        <footer>
+            Rodapé
+        </footer>
+    </div>
+
+    <a href="questao1.html">VOLTAR PAGINA</a>
+</body>
+</html>
